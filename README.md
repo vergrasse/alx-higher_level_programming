@@ -1,1 +1,1 @@
-This repostry will containe file related to alx high level programming
+This repostry will containe files related to alx high level programming
