@@ -7,13 +7,13 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initializing this rectangle class
-        Args:
-            width: represents the width of the rectangle
-            height: represents the height of the rectangle
-        Raises:
-            TypeError: if size is not integer
-            ValueError: if size is less than zero
-        """
+                Args:
+                    width: represents the width of the rectangle
+                    height: represents the height of the rectangle
+                Raises:
+                    TypeError: if size is not integer
+                    ValueError: if size is less than zero
+                """
         self.width = width
         self.height = height
 
@@ -44,3 +44,12 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        return self.__width * self.__height
+
+    def perimeter(self):
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return 2 * (self.__width + self.__height)
+    
