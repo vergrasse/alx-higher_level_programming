@@ -6,10 +6,10 @@ Contains a function that writes a string to a text file.
 
 
 def write_file(filename="", text=""):
-    """Writes a string to a text file (UTF8) and returns the number of characters written."""
-    # Open the file in write mode (overwriting existing content) or create it if it doesn't exist
-    with open(filename, mode='w', encoding='utf-8') as file:
-        # Write the text to the file
-        file.write(text)
-        # Return the number of characters written
-        return len(text)
+    """
+    Writes a string to a text file (UTF8) and returns the number of characters written.
+    If the file doesn’t exist, it should be created.
+    The function should overwrite the content of the file if it already exists.
+    """
+    with open(filename, 'w', encoding='utf-8') as f:
+        return f.write(text)
