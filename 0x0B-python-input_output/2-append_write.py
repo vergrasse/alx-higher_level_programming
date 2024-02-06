@@ -1,8 +1,3 @@
-
-Below is the implementation of the append_write function according to your requirements:
-
-python
-Copy code
 #!/usr/bin/python3
 """append_write module.
 
