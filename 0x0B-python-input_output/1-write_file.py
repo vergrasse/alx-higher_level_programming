@@ -11,5 +11,5 @@ def write_file(filename="", text=""):
     If the file doesn’t exist, it should be created.
     The function should overwrite the content of the file if it already exists.
     """
-    with open(filename, 'w', encoding='utf-8') as f:
+    with open(filename, 'w') as f:
         return f.write(text)
